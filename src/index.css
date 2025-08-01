@@ -1,1 +1,21 @@
+/* src/index.css */
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #0e6679;
+  --color-para: #414141;
+  --font-primary: "Poppins", sans-serif;
+}
+
+@layer components {
+  .ab-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    /* This will now work correctly */
+    @apply md:max-w-[1045px];
+  }
+}
