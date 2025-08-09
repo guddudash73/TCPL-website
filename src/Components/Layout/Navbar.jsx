@@ -108,10 +108,11 @@ const Navbar = () => {
           {state.isServiceOpen && (
             <div className="absolute w-60 h-auto">
               <motion.div
-                className="bg-accent/25 p-2 flex flex-col gap-3 rounded-md mt-3 overflow-hidden"
+                className="bg-white/50 p-2 flex flex-col gap-3 rounded-md mt-3 overflow-hidden"
                 initial={{ opacity: 0, y: -5 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -5 }}
+                style={{ backdropFilter: "blur(10px)" }}
                 transition={{ duration: 0.2 }}
               >
                 {/* GIS Services dropdown */}
@@ -274,7 +275,7 @@ const Navbar = () => {
           backdropFilter: state.isTransparent ? "blur(5px)" : "blur(0px)",
           width: state.isTransparent ? "90%" : "100%",
           top: state.isTransparent ? 15 : 0,
-          borderRadius: state.isTransparent ? "30px" : "0px",
+          borderRadius: state.isTransparent ? "12px" : "0px",
           height: state.isTransparent ? "3.5rem" : "4rem",
         }}
         transition={{ duration: 0.4 }}

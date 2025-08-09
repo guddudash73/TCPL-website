@@ -1,10 +1,13 @@
 import React from "react";
+import HeroSection from "@/Components/Layout/HeroSection";
+import AboutUs from "@/Components/Layout/AboutUs";
 
 const Home = () => {
   return (
-    <div className="h-[2000px] bg-blue-300 pt-[4rem] ab-container">
-      lorem5000
-    </div>
+    <>
+      <HeroSection></HeroSection>
+      <AboutUs></AboutUs>
+    </>
   );
 };
 
