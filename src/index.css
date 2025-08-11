@@ -4,6 +4,7 @@
 
 body {
   scroll-behavior: smooth;
+  background-color: #fcfcfc;
 }
 
 @custom-variant dark (&:is(.dark *));
