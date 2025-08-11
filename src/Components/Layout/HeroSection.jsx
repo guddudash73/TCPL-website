@@ -12,7 +12,7 @@ const HeroSection = () => {
           <div className="grid md:grid-cols-2 grid-cols-1 items-center h-full w-full">
             <div id="left" className=" flex flex-col">
               <HeroText></HeroText>
-              <div className="bg-para h-[4px] w-[10rem] md:w-[8rem] rounded-full "></div>
+              <div className="bg-[#F6952E] h-[2px] w-[10rem] md:w-[8rem] rounded-full "></div>
               <p className="text-para font-primary md:pt-4 pt-6">
                 At Tecnoglance Consulting Private Limited, we deliver
                 precision-driven geospatial intelligence, advanced LiDAR
@@ -21,7 +21,11 @@ const HeroSection = () => {
             </div>
 
             <div className="w-auto h-auto flex-grow absolute right-0 hidden md:block overflow-hidden">
-              <img src={heroImg} alt="" className="md:w-120 lg:w-150" />
+              <img
+                src={heroImg}
+                alt=""
+                className="md:w-120 lg:w-150 2xl:w-200"
+              />
             </div>
           </div>
         </div>

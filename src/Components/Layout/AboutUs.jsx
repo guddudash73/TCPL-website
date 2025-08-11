@@ -1,16 +1,16 @@
 import React from "react";
-import aboutImage from "../../assets/aboutImage.jpg";
+import aboutImage from "../../assets/aboutImage.png";
 
 const AboutUs = () => {
   return (
-    <section id="about" className="h-screen w-full overflow-hidden">
-      <div className="w-full h-full pt-20 ab-container flex flex-col items-center gap-10">
+    <section id="about" className="h-auto w-full overflow-hidden">
+      <div className="w-full h-full md:pt-20 pt-15 ab-container flex flex-col items-center justify-center gap-10 md:gap-5">
         {/* Heading */}
         <div>
-          <h1 className="text-4xl font-primary font-semibold text-para pl-0.5">
+          <h1 className="text-4xl font-primary font-semibold text-main pl-0.5">
             About Us
           </h1>
-          <div className="h-[4px] rounded-full w-[7rem] bg-main"></div>
+          <div className="h-[2px] rounded-full w-[7rem] bg-[#F6952E] mt-2"></div>
         </div>
 
         {/* Content - Grid Layout */}
@@ -29,16 +29,16 @@ const AboutUs = () => {
               src={aboutImage}
               alt="about"
               loading="lazy"
-              className="w-[90%] h-[90%] object-contain object-center rounded-none"
+              className="w-full h-full md:w-[95%] md:h-[95%] md:object-contain object-cover object-center rounded-none"
             />
           </div>
 
           {/* Text column (1 part of the grid on md+) */}
-          <div className="righttext pt-4 flex flex-col gap-2 w-full h-full justify-center items-center md:items-start">
-            <p className="text-main font-primary font-semibold">
+          <div className="righttext pt-8 ms:pt-4 flex flex-col gap-2 w-full h-full justify-center items-center md:items-start">
+            <p className="text-main font-primary font-semibold text-xl">
               We handle everything for you!
             </p>
-            <p className="text-para font-primary leading-6 md:leading-7.5 text-center md:text-left px-5 md:px-0 md:max-w-70">
+            <p className=" pt-2 text-para font-primary leading-6 md:leading-7.5 text-center md:text-left px-5 md:px-0 md:max-w-70">
               Our expert team delivers precise, high-resolution mapping and
               geospatial solutions to support various industries. Committed to
               innovation and accuracy, we help clients achieve superior project
