@@ -3,7 +3,7 @@ import aboutImage from "../../assets/aboutImage.png";
 
 const AboutUs = () => {
   return (
-    <section id="about" className="h-auto w-full overflow-hidden">
+    <section id="about" className="h-auto md:h-screen w-full overflow-hidden">
       <div className="w-full h-full md:pt-20 pt-15 ab-container flex flex-col items-center justify-center gap-10 md:gap-5">
         {/* Heading */}
         <div>

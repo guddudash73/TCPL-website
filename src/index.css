@@ -14,6 +14,7 @@ body {
   --color-para: #414141;
   --color-drop: #8fecff;
   --color-main: #0e6679;
+  --color-2nd: #f6952e;
   --font-primary: "Poppins", sans-serif;
   --font-card: "Orbitron", sans-serif;
 }
@@ -144,5 +145,6 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-primary);
   }
 }
