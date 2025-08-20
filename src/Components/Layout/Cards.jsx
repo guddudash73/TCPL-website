@@ -5,7 +5,7 @@ const Cards = () => {
   return (
     <div
       id="cards"
-      className="w-full h-auto md:h-screen md:pt-20 overflow-hidden pt-20"
+      className="w-full h-auto md:h-screen overflow-hidden pt-10 bg-gradient-to-b from-[#8FECFF]/50 to-[#ffff] mt-20"
     >
       <div className="ab-container flex justify-center items-center h-full">
         <div className=" grid grid-cols-1 md:grid-cols-3 w-full gap-7">
